@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Table Generator</title>
+</head>
+<body>
+    <body class="font-serif tracking-wide bg-blue-400">
+    <section id="heading" class="">
+        <div class="container flex items-center justify-center h-16 mx-auto bg-neutral-700 rounded-xl">
+            <h2 class="text-3xl text-center text-white">Table Generator</h2>
+        </div>
+    </section>
+    <section id="input-table" class="mx-5 my-6 md:mx-0">
+        <div class="container relative flex flex-col items-center justify-center py-20 mx-auto space-x-0 space-y-5 bg-neutral-700 ring-2 ring-stone-700 md:justify-center md:space-x-5 md:space-y-0 md:flex-row rounded-xl ">
+            <!-- <input type="number" name="todoInput" id="inputTable" placeholder="Enter Number" maxlength="8" class="w-4/5 h-full px-2 py-5 text-xl focus:outline-none rounded-xl inputTable md:w-1/2" > -->
+            <input  
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"  name="inputTable" id="input-table-text" placeholder="Enter Number"  maxlength="4" class="w-4/5 h-full px-2 py-5 text-xl focus:outline-none rounded-xl inputTable md:w-1/2" >
+            <button disabled class="p-5 px-20 text-xl text-white transition-all duration-100 ease-linear bg-blue-400 disabled:bg-gray-500 disabled:cursor-not-allowed rounded-3xl hover:bg-blue-600 add-table">Create Table</button>
+             <h3 class="absolute invisible text-xl font-semibold text-red-500 top-8 message left-16 md:left-1/3 md:top-12">Enter only Digits!!! </h3>
+        </div>
+        
+    </section>
+    
+    <section id="table-container" class="mx-5 mt-20 md:mx-0">
+        <button class="invisible block p-2 px-20 mx-auto text-xl italic text-white transition-all duration-100 ease-linear rounded-lg hover:bg-neutral-800 bg-neutral-700 clear">Clear All</button>
+        <div class="container flex flex-wrap items-center justify-center py-5 mx-auto table-sub-container rounded-xl ">
+            
+            
+        </div>
+       
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

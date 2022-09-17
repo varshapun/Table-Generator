@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    border: #000 1px solid;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: #404040;
+    position: relative;
+
+}
+
+
+
+
+
+.col {
+    flex-basis: 20%;
+    color: #fff;
+    font-size: 20px;
+
+}
